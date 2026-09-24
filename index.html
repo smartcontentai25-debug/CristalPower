@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISTAL POWER | Official EPK & Press Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#1C1C1C',      // Deep charcoal base
+                            pink: '#F91250',       // High-voltage Neon Hot Pink
+                            gray: '#494949',       // Mid gray contrast
+                            taupe: '#938C8E',      // Metallic taupe gray
+                            light: '#EFEEEE'       // Creamy off-white
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Bodoni Moda"', 'serif'],
+                        display: ['Syne', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-pink': '0 0 25px -5px rgba(249, 18, 80, 0.45)',
+                        'neon-pink-lg': '0 0 45px -5px rgba(249, 18, 80, 0.65)',
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Pattern based on the image design system */
+        .bg-geometric-pattern {
+            background-color: #1C1C1C;
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='40' viewBox='0 0 80 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 C0 8.954 8.954 0 20 0 L20 20 Z' fill='%23EFEEEE' fill-opacity='0.04'/%3E%3Cpath d='M20 20 L20 40 C8.954 40 0 31.046 0 20 Z' fill='%23F91250' fill-opacity='0.06'/%3E%3Cpath d='M40 20 C40 8.954 48.954 0 60 0 L60 20 Z' fill='%23938C8E' fill-opacity='0.05'/%3E%3Cpath d='M60 20 L60 40 C48.954 40 40 31.046 40 20 Z' fill='%23EFEEEE' fill-opacity='0.04'/%3E%3C/svg%3E");
+            background-size: 80px 40px;
+        }
+
+        .bg-pattern-banner {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='30' viewBox='0 0 60 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15 C0 6.716 6.716 0 15 0 L15 15 Z' fill='%231C1C1C'/%3E%3Cpath d='M15 15 L15 30 C6.716 30 0 23.284 0 15 Z' fill='%231C1C1C'/%3E%3Cpath d='M30 15 C30 6.716 36.716 0 45 0 L45 15 Z' fill='%23F91250'/%3E%3Cpath d='M45 15 L45 30 C36.716 30 30 23.284 30 15 Z' fill='%231C1C1C'/%3E%3C/svg%3E");
+            background-size: 60px 30px;
+        }
+
+        /* Glassmorphism & High-Contrast Cards */
+        .glass-card {
+            background: rgba(28, 28, 28, 0.90);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(239, 238, 238, 0.15);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(249, 18, 80, 0.6);
+            box-shadow: 0 12px 36px -10px rgba(249, 18, 80, 0.3);
+        }
+
+        /* Neon Glow Text */
+        .text-glow-pink {
+            text-shadow: 0 0 16px rgba(249, 18, 80, 0.75);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1C1C1C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #494949;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F91250;
+        }
+
+        /* Equalizer Bar Animation */
+        @keyframes eqBar {
+            0%, 100% { height: 4px; }
+            50% { height: 26px; }
+        }
+        .eq-active div {
+            animation: eqBar 0.75s ease-in-out infinite alternate;
+        }
+        .eq-active div:nth-child(2) { animation-delay: 0.2s; }
+        .eq-active div:nth-child(3) { animation-delay: 0.4s; }
+        .eq-active div:nth-child(4) { animation-delay: 0.1s; }
+
+        /* Vertical Text Class */
+        .writing-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body class="bg-geometric-pattern text-brand-light font-body antialiased selection:bg-brand-pink selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-black/95 backdrop-blur-xl border-b border-brand-light/15 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Monogram Logo -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-brand-black border border-brand-pink/60 flex items-center justify-center overflow-hidden shadow-neon-pink group-hover:scale-105 transition-transform">
+                    <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0014_uevmnu.jpg" alt="Cristal Power Logo" class="w-full h-full object-cover">
+                </div>
+                <div class="font-serif font-bold text-xl tracking-wider text-brand-light group-hover:text-brand-pink transition-colors">
+                    CRISTAL <span class="font-display text-brand-pink">POWER</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-brand-taupe">
+                <a href="#about" class="hover:text-brand-pink transition-colors">Bio</a>
+                <a href="#discography" class="hover:text-brand-pink transition-colors">Música</a>
+                <a href="#stats" class="hover:text-brand-pink transition-colors">Stats</a>
+                <a href="#shows" class="hover:text-brand-pink transition-colors">Shows</a>
+                <a href="#riders" class="hover:text-brand-pink transition-colors">Riders</a>
+                <a href="#press" class="hover:text-brand-pink transition-colors">Prensa</a>
+            </nav>
+
+            <!-- Actions & Booking CTA -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="#booking" class="px-6 py-2.5 rounded-full bg-brand-pink text-white font-bold text-xs tracking-widest uppercase shadow-neon-pink hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                    <span>Booking</span>
+                    <span class="w-2 h-2 rounded-full bg-white"></span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" aria-label="Abrir menú" class="lg:hidden text-brand-light hover:text-brand-pink focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-black/98 backdrop-blur-2xl border-b border-brand-light/10 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-brand-light hover:text-brand-pink font-semibold text-lg py-1 mobile-link">Bio</a>
+            <a href="#discography" class="block text-brand-light hover:text-brand-pink font-semibold text-lg py-1 mobile-link">Música</a>
+            <a href="#stats" class="block text-brand-light hover:text-brand-pink font-semibold text-lg py-1 mobile-link">Stats</a>
+            <a href="#shows" class="block text-brand-light hover:text-brand-pink font-semibold text-lg py-1 mobile-link">Shows</a>
+            <a href="#riders" class="block text-brand-light hover:text-brand-pink font-semibold text-lg py-1 mobile-link">Riders</a>
+            <a href="#press" class="block text-brand-light hover:text-brand-pink font-semibold text-lg py-1 mobile-link">Prensa</a>
+            <a href="#booking" class="block w-full text-center px-5 py-3 rounded-xl bg-brand-pink text-white font-bold text-base tracking-wide uppercase mt-4 mobile-link">
+                Booking
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-20">
+
+        <section id="hero" class="relative min-h-[92vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <!-- Background Image & Dark Overlay Gradient -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264363/IMG_3621_tx71rm.jpg" 
+                     alt="Cristal Power" 
+                     class="w-full h-full object-cover object-center opacity-40 filter brightness-90 scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-black/85 via-brand-black/65 to-brand-black"></div>
+            </div>
+
+            <!-- Ambient Background Glows -->
+            <div class="absolute top-1/4 left-10 w-96 h-96 bg-brand-pink/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-brand-taupe/20 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-6xl mx-auto relative z-10 w-full">
+                
+                <!-- Location Pill -->
+                <div class="text-center mb-6">
+                    <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-card border border-brand-pink/40 text-xs font-semibold uppercase tracking-widest text-brand-light shadow-neon-pink">
+                        <span class="w-2 h-2 rounded-full bg-brand-pink animate-pulse"></span>
+                        <span>Caracas (HQ) / Miami, FL (US Base)</span>
+                    </div>
+                </div>
+
+                <!-- Main Title with Editorial Serif + Display Mix -->
+                <div class="text-center mb-6">
+                    <p class="font-serif italic text-brand-taupe text-lg sm:text-2xl mb-2 tracking-widest uppercase">Electronic Press Kit</p>
+                    <h1 class="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-normal tracking-tight text-brand-light uppercase leading-none">
+                        CRISTAL <span class="font-display font-extrabold text-brand-pink text-glow-pink">POWER<span class="text-brand-light">.</span></span>
+                    </h1>
+                </div>
+
+                <!-- Subtitle / Genres -->
+                <p class="text-center text-lg sm:text-2xl font-medium text-brand-light max-w-3xl mx-auto mb-6 tracking-wider">
+                    Venezuelan DJ & Producer
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs font-semibold uppercase tracking-widest text-brand-taupe mb-8">
+                    <span class="px-4 py-2 rounded-lg bg-brand-gray/30 border border-brand-light/15">Tech House</span>
+                    <span class="px-4 py-2 rounded-lg bg-brand-gray/30 border border-brand-light/15">Deep House</span>
+                    <span class="px-4 py-2 rounded-lg bg-brand-gray/30 border border-brand-light/15">Afro House</span>
+                </div>
+
+                <!-- Tagline -->
+                <blockquote class="text-center text-lg sm:text-xl font-serif italic text-brand-light/90 mb-10 max-w-2xl mx-auto border-y border-brand-pink/30 py-3">
+                    "It's all about the power of the beat"
+                </blockquote>
+
+                <!-- Call to Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+                    <button onclick="downloadPressKit()" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-brand-light font-bold tracking-widest uppercase text-xs hover:bg-brand-pink/20 border-brand-light/20 transition-all flex items-center justify-center gap-3 group">
+                        <i class="fa-solid fa-file-pdf text-brand-pink group-hover:scale-110 transition-transform"></i>
+                        <span>Press Kit (PDF)</span>
+                    </button>
+                    
+                    <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-pink text-white font-bold tracking-widest uppercase text-xs shadow-neon-pink hover:scale-105 transition-all flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Booking / Contacto</span>
+                    </a>
+
+                    <a href="#discography" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-brand-light font-bold tracking-widest uppercase text-xs hover:text-brand-pink transition-all flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-play text-brand-pink"></i>
+                        <span>Escuchar Releases</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15 bg-brand-black/90 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                    
+                    <div class="lg:col-span-5 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-pink via-brand-taupe to-brand-light rounded-3xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+                        
+                        <div class="relative rounded-2xl overflow-hidden glass-card border border-brand-light/20 aspect-[4/5] bg-brand-black flex flex-col justify-between group">
+                            <!-- Image with Smooth Zoom -->
+                            <div class="absolute inset-0 z-0 overflow-hidden">
+                                <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264361/IMG_6162_xjifuk.jpg" 
+                                     alt="Cristal Power Press Portrait" 
+                                     class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 filter brightness-95">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-brand-black/40"></div>
+                            </div>
+                            
+                            <!-- Pattern Top Bar -->
+                            <div class="h-10 bg-pattern-banner w-full border-b border-brand-light/10 relative z-10 opacity-80"></div>
+                            
+                            <!-- Bottom Information Overlay -->
+                            <div class="p-6 relative z-10 mt-auto bg-gradient-to-t from-brand-black via-brand-black/80 to-transparent">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-pink/20 border border-brand-pink/40 text-[10px] font-bold text-brand-pink uppercase tracking-widest mb-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-brand-pink animate-ping"></span>
+                                    Official Portrait 2026
+                                </div>
+                                <h3 class="font-serif text-2xl font-bold tracking-wider text-brand-light">CRISTAL POWER</h3>
+                                <p class="text-xs text-brand-taupe mt-0.5">Press Photo — High Resolution</p>
+                            </div>
+
+                            <!-- Bottom Pattern Strip -->
+                            <div class="h-6 bg-brand-pink flex items-center justify-around px-4 text-brand-black text-[10px] font-extrabold uppercase tracking-widest relative z-10">
+                                <span>Miami</span>
+                                <span>●</span>
+                                <span>Caracas</span>
+                                <span>●</span>
+                                <span>Burning Man</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio Text Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Perfil & Biografía</span>
+                        </div>
+
+                        <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight leading-tight">
+                            Elevando la energía en el dancefloor global<span class="text-brand-pink font-bold">.</span>
+                        </h2>
+
+                        <!-- Short Summary -->
+                        <p class="text-brand-light/90 text-lg leading-relaxed">
+                            Originaria de Caracas, Venezuela y basada en Miami, FL, <strong class="text-brand-pink">CRISTAL POWER</strong> se ha posicionado rápidamente como una de las figuras emergentes más influyentes de la escena Tech House, Deep House y Afro House. Con más de 6 años de impecable trayectoria, su estilo distintivo fusiona grooves contagiosos, líneas de bajo profundas y una vibra electrizante inspirada en clubes icónicos e industrias underground.
+                        </p>
+
+                        <!-- Expandable Official Full Bio -->
+                        <div id="full-bio" class="hidden space-y-4 text-brand-taupe text-base leading-relaxed border-t border-brand-light/15 pt-4">
+                            <p>
+                                Ha llevado su propuesta sonora a escenarios legendarios como el icónico festival <strong>Burning Man (Black Rock Desert - 2025 & 2026)</strong>, el epicentro de la música electrónica en Miami <strong>Factory Town</strong>, y ha tenido presencia en estaciones globales de renombre como <strong>Ibiza Global Radio</strong>.
+                            </p>
+                            <p>
+                                Sus lanzamientos discográficos acumulan soporte constante en plataformas y clubes internacionales a través de sellos como <em>Kubbo Records, Valera Under Records, Drogalipz Jamzz y XIMA</em>, consolidando una propuesta artística fresca, potente e inmersiva.
+                            </p>
+                        </div>
+
+                        <!-- Read More Toggle Button -->
+                        <button id="toggle-bio-btn" onclick="toggleBio()" class="text-brand-pink font-semibold text-xs tracking-widest uppercase hover:underline inline-flex items-center gap-2 pt-2">
+                            <span id="bio-btn-text">Leer Biografía Oficial Completa</span>
+                            <i id="bio-btn-icon" class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+
+                        <!-- Shared Stages Card -->
+                        <div class="mt-8 glass-card p-6 rounded-2xl border border-brand-light/15 relative overflow-hidden">
+                            <div class="w-1.5 h-full bg-brand-pink absolute left-0 top-0"></div>
+                            <h3 class="font-serif text-lg tracking-wider text-brand-light uppercase mb-4 pl-3 flex items-center gap-2">
+                                Shared Stages / Escenarios Compartidos
+                            </h3>
+                            <div class="flex flex-wrap gap-2 pl-3">
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">John Summit</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">wAFF</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">Calussa</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">Amal Nemer</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">Tony Guerra</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">Paolo Rocco</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-brand-black/80 border border-brand-light/15 text-xs font-semibold text-brand-light">Daniel Orpi</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="discography" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <span>Discografía & Música</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight">
+                        Lanzamientos Oficiales<span class="text-brand-pink font-bold">.</span>
+                    </h2>
+                    <p class="text-brand-taupe mt-2 text-sm">Escucha el catálogo oficial y lanzamientos en vivo directamente desde Spotify.</p>
+                </div>
+
+                <!-- Spotify Official Embedded Player -->
+                <div class="glass-card p-2 sm:p-4 rounded-2xl border border-brand-pink/40 shadow-neon-pink bg-brand-black/95 relative overflow-hidden">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/04AJyP6rPtYl9Nx3PINZrv?utm_source=generator&si=54b85c4ff3e645a7" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="w-full"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15 bg-brand-black/90">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Audiencia & Métricas</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight">
+                        Audience Analytics<span class="text-brand-pink font-bold">.</span>
+                    </h2>
+                    <p class="text-brand-taupe mt-2 text-sm">Alcance verificado y distribución demográfica global del proyecto.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                    
+                    <!-- Total Reach Stat Card -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-light/15 text-center flex flex-col justify-center items-center relative overflow-hidden">
+                        <div class="w-16 h-16 rounded-full bg-brand-pink/20 border border-brand-pink flex items-center justify-center text-brand-pink mb-4">
+                            <i class="fa-solid fa-users text-2xl"></i>
+                        </div>
+                        <span class="font-serif text-6xl text-brand-light mb-2 tracking-tight">+16,395</span>
+                        <span class="text-xs uppercase tracking-widest text-brand-pink font-bold">Cuentas Alcanzadas</span>
+                    </div>
+
+                    <!-- Gender Demographics -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-light/15">
+                        <h3 class="font-serif text-xl uppercase tracking-wider text-brand-light mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-venus-mars text-brand-pink text-sm"></i> Demografía por Género
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold uppercase mb-1">
+                                    <span class="text-brand-light">Hombres</span>
+                                    <span class="text-brand-pink">75.1%</span>
+                                </div>
+                                <div class="w-full h-3 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink rounded-full" style="width: 75.1%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold uppercase mb-1">
+                                    <span class="text-brand-light">Mujeres</span>
+                                    <span class="text-brand-taupe">24.8%</span>
+                                </div>
+                                <div class="w-full h-3 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-taupe rounded-full" style="width: 24.8%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Age Range -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-light/15">
+                        <h3 class="font-serif text-xl uppercase tracking-wider text-brand-light mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-cake-candles text-brand-pink text-sm"></i> Rango de Edad Principal
+                        </h3>
+                        <div class="text-center py-4">
+                            <span class="font-serif text-6xl text-brand-pink text-glow-pink block mb-2">25 - 34</span>
+                            <span class="text-xs font-bold text-brand-light uppercase tracking-widest">Años (62% del Total)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Top Countries & Cities Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Top Countries -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-light/15">
+                        <h3 class="font-serif text-xl uppercase tracking-wider text-brand-light mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-globe text-brand-pink text-sm"></i> Top Países
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">🇺🇸 Estados Unidos</span>
+                                    <span class="text-brand-taupe">40.5%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 40.5%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">🇻🇪 Venezuela</span>
+                                    <span class="text-brand-taupe">32.2%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 32.2%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">🇪🇸 España</span>
+                                    <span class="text-brand-taupe">9.3%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 9.3%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">🇨🇴 Colombia</span>
+                                    <span class="text-brand-taupe">2.7%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 2.7%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Cities -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-light/15">
+                        <h3 class="font-serif text-xl uppercase tracking-wider text-brand-light mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-city text-brand-pink text-sm"></i> Top Ciudades
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">Caracas</span>
+                                    <span class="text-brand-taupe">25.0%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 25%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">Miami, FL</span>
+                                    <span class="text-brand-taupe">11.3%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 11.3%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">Madrid</span>
+                                    <span class="text-brand-taupe">3.8%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 3.8%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-brand-light">Doral, FL</span>
+                                    <span class="text-brand-taupe">3.4%</span>
+                                </div>
+                                <div class="w-full h-2 bg-brand-gray/50 rounded-full overflow-hidden">
+                                    <div class="h-full bg-brand-pink" style="width: 3.4%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="shows" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Historial de Presentaciones</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight">
+                        Selected Performances<span class="text-brand-pink font-bold">.</span>
+                    </h2>
+                    <p class="text-brand-taupe mt-2 text-sm">Principales residencias, festivales y clubes alrededor del mundo.</p>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button onclick="switchShowsTab('miami')" id="tab-miami" class="show-tab px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all bg-brand-pink text-white shadow-neon-pink">
+                        Miami & Florida
+                    </button>
+                    <button onclick="switchShowsTab('festivals')" id="tab-festivals" class="show-tab px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all glass-card text-brand-taupe hover:text-white">
+                        Festivales Destacados
+                    </button>
+                    <button onclick="switchShowsTab('tour')" id="tab-tour" class="show-tab px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all glass-card text-brand-taupe hover:text-white">
+                        Otras Ciudades / Giras
+                    </button>
+                </div>
+
+                <!-- Tab Content Containers -->
+                <div id="content-miami" class="show-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <i class="fa-solid fa-warehouse text-2xl text-brand-pink mb-3"></i>
+                        <h3 class="font-serif text-2xl text-brand-light">Factory Town</h3>
+                        <p class="text-xs uppercase tracking-widest font-bold text-brand-pink mt-1">Miami, FL</p>
+                        <p class="text-sm text-brand-taupe mt-3">Epicentro de eventos de escala masiva e industria underground durante Art Basel y Music Week.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <i class="fa-solid fa-flag-checkered text-2xl text-brand-pink mb-3"></i>
+                        <h3 class="font-serif text-2xl text-brand-light">F1 Grand Prix</h3>
+                        <p class="text-xs uppercase tracking-widest font-bold text-brand-pink mt-1">1800 Lucky — Wynwood, Miami</p>
+                        <p class="text-sm text-brand-taupe mt-3">Set especial de alto voltaje para la semana oficial de la Fórmula 1 en Miami.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <i class="fa-solid fa-couch text-2xl text-brand-pink mb-3"></i>
+                        <h3 class="font-serif text-2xl text-brand-light">Do Not Sit on the Furniture</h3>
+                        <p class="text-xs uppercase tracking-widest font-bold text-brand-pink mt-1">South Beach, Miami</p>
+                        <p class="text-sm text-brand-taupe mt-3">Club boutique icónico reconocido por curar el mejor Deep House & Underground de la ciudad.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <i class="fa-solid fa-tree text-2xl text-brand-pink mb-3"></i>
+                        <h3 class="font-serif text-2xl text-brand-light">Treehouse</h3>
+                        <p class="text-xs uppercase tracking-widest font-bold text-brand-pink mt-1">Miami Beach</p>
+                        <p class="text-sm text-brand-taupe mt-3">Referencia obligada del Tech House local y giras internacionales.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <i class="fa-solid fa-sun text-2xl text-brand-pink mb-3"></i>
+                        <h3 class="font-serif text-2xl text-brand-light">Oasis Wynwood</h3>
+                        <p class="text-xs uppercase tracking-widest font-bold text-brand-pink mt-1">Wynwood Arts District</p>
+                        <p class="text-sm text-brand-taupe mt-3">Open-air venue para eventos multitudinarios y sunset sessions.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <i class="fa-solid fa-martini-glass text-2xl text-brand-pink mb-3"></i>
+                        <h3 class="font-serif text-2xl text-brand-light">MAD Club</h3>
+                        <p class="text-xs uppercase tracking-widest font-bold text-brand-pink mt-1">Wynwood, Miami</p>
+                        <p class="text-sm text-brand-taupe mt-3">Residencia recurrente en uno de los nightlife hubs más cotizados.</p>
+                    </div>
+                </div>
+
+                <!-- Festivals Content Container -->
+                <div id="content-festivals" class="show-content hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-card p-8 rounded-2xl border border-brand-pink/40 bg-brand-black/95 relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-brand-pink/20 rounded-full blur-3xl"></div>
+                        <span class="px-3 py-1 rounded bg-brand-pink/20 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4 inline-block">2025 & 2026 Official Lineup</span>
+                        <h3 class="font-serif text-4xl text-brand-light mb-2">BURNING MAN</h3>
+                        <p class="text-xs uppercase tracking-widest text-brand-taupe mb-4">Black Rock Desert, Nevada, USA</p>
+                        <p class="text-brand-light/90 text-sm leading-relaxed">
+                            Presentación en múltiples camps oficiales y art cars principales durante la mítica experiencia en el desierto de Nevada.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl border border-brand-light/15 bg-brand-black/95">
+                        <span class="px-3 py-1 rounded bg-brand-pink/20 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4 inline-block">Radio & Broadcast</span>
+                        <h3 class="font-serif text-4xl text-brand-light mb-2">Ibiza Global Radio</h3>
+                        <p class="text-xs uppercase tracking-widest text-brand-taupe mb-4">Ibiza, España / Stream Mundial</p>
+                        <p class="text-brand-light/90 text-sm leading-relaxed">
+                            Guest mix y showcase exclusivo sintonizado por miles de oyentes globales entusiastas de la música electrónica.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tour Content Container -->
+                <div id="content-tour" class="show-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Bauhaus</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Houston, TX</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Dallas Venues</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Dallas, TX</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Atlanta Nightlife</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Atlanta, GA</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Panamá Showcase</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Panamá City</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Orlando Underground</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Orlando, FL</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Austin Clubs</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Austin, TX</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Tampa Electronic</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Tampa, FL</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border border-brand-light/15">
+                        <h4 class="font-serif text-xl text-brand-light">Jacksonville Events</h4>
+                        <p class="text-xs text-brand-pink uppercase font-bold tracking-widest mt-1">Jacksonville, FL</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="riders" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15 bg-brand-black/90">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Requerimientos Oficiales</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight">
+                        Riders Técnicos & Logística<span class="text-brand-pink font-bold">.</span>
+                    </h2>
+                    <p class="text-brand-taupe mt-2 text-sm">Especificaciones obligatorias para contrataciones y producción de eventos.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Technical Rider Card -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-pink/30 bg-brand-black/95 relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-brand-light/15">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-sliders text-2xl text-brand-pink"></i>
+                                <h3 class="font-serif text-2xl text-brand-light uppercase">Technical Rider</h3>
+                            </div>
+                            <span class="text-xs font-mono text-brand-pink bg-brand-pink/10 px-3 py-1 rounded border border-brand-pink/20">Audio Spec</span>
+                        </div>
+
+                        <ul class="space-y-4 text-brand-light/90 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-brand-pink mt-1"></i>
+                                <span><strong>Reproductores:</strong> 2x o 3x Pioneer CDJ-3000 (Firmware actualizado y linkeados por DJ Link Ethernet).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-brand-pink mt-1"></i>
+                                <span><strong>Mixer:</strong> 1x Pioneer DJM-900 NXS2 (En perfectas condiciones).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-brand-pink mt-1"></i>
+                                <span><strong>Efectos:</strong> Pioneer RMX-1000 Station + soporte oficial (si aplica).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-brand-pink mt-1"></i>
+                                <span><strong>Monitores:</strong> 2x Monitores de alta potencia ajustables a la altura de los oídos del artista en cabina.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-brand-pink mt-1"></i>
+                                <span><strong>Soporte Técnico:</strong> Técnico de sonido profesional calificado presente durante toda la prueba de sonido y set.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hospitality Rider Card -->
+                    <div class="glass-card p-8 rounded-2xl border border-brand-pink/30 bg-brand-black/95 relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-brand-light/15">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-hotel text-2xl text-brand-pink"></i>
+                                <h3 class="font-serif text-2xl text-brand-light uppercase">Hospitality Rider</h3>
+                            </div>
+                            <span class="text-xs font-mono text-brand-pink bg-brand-pink/10 px-3 py-1 rounded border border-brand-pink/20">Logística</span>
+                        </div>
+
+                        <ul class="space-y-4 text-brand-light/90 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-martini-glass-citrus text-brand-pink mt-1"></i>
+                                <span><strong>Catering Cabina:</strong> 1x Botella Ron Santa Teresa, 2x Coca Cola, 2x Red Bull Sugar Free.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-bottle-water text-brand-pink mt-1"></i>
+                                <span><strong>Hidratación & Varios:</strong> 3x Aguas sin gas frías, Hielera con hielo limpio, vasos y toallas negras en cabina.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-ticket text-brand-pink mt-1"></i>
+                                <span><strong>Entradas:</strong> 5x Entradas VIP / Access Passes para acompañantes y equipo.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-bed text-brand-pink mt-1"></i>
+                                <span><strong>Hospedaje:</strong> Hotel 3 estrellas superior o 4 estrellas cerca del venue (Habitación King/SGL).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-car text-brand-pink mt-1"></i>
+                                <span><strong>Transporte:</strong> Traslados privados Aeropuerto - Hotel - Venue - Aeropuerto.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="press" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Galería de Prensa</span>
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight">
+                        Press Kit & Media Assets<span class="text-brand-pink font-bold">.</span>
+                    </h2>
+                    <p class="text-brand-taupe mt-2 text-sm">Fotos de alta resolución y marcas vectoriales para prensa, flyers y promoción. Haz clic en cualquiera para expandir.</p>
+                </div>
+
+                <!-- Official Logo Assets Section -->
+                <div class="mb-16">
+                    <h3 class="font-serif text-2xl text-brand-light uppercase mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-vector-square text-brand-pink"></i> Logos Oficiales & Identity Assets
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="glass-card p-3 rounded-xl border border-brand-light/15 hover:border-brand-pink transition-all group cursor-pointer text-center" onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0014_uevmnu.jpg', 'Cristal Power — Logo Emblem Asset')">
+                            <div class="aspect-square rounded-lg overflow-hidden bg-brand-black mb-3 border border-brand-light/10">
+                                <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0014_uevmnu.jpg" alt="Cristal Power Official Logo 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-light block">Logo Primary Emblem</span>
+                            <span class="text-[9px] text-brand-pink mt-0.5 block"><i class="fa-solid fa-expand"></i> Ver en alta resolución</span>
+                        </div>
+
+                        <div class="glass-card p-3 rounded-xl border border-brand-light/15 hover:border-brand-pink transition-all group cursor-pointer text-center" onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0008_h0pisg.jpg', 'Cristal Power — Logo Brandmark Asset')">
+                            <div class="aspect-square rounded-lg overflow-hidden bg-brand-black mb-3 border border-brand-light/10">
+                                <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0008_h0pisg.jpg" alt="Cristal Power Official Logo 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-light block">Logo Brandmark</span>
+                            <span class="text-[9px] text-brand-pink mt-0.5 block"><i class="fa-solid fa-expand"></i> Ver en alta resolución</span>
+                        </div>
+
+                        <div class="glass-card p-3 rounded-xl border border-brand-light/15 hover:border-brand-pink transition-all group cursor-pointer text-center" onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0010_lmriov.jpg', 'Cristal Power — Logo Monogram Asset')">
+                            <div class="aspect-square rounded-lg overflow-hidden bg-brand-black mb-3 border border-brand-light/10">
+                                <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0010_lmriov.jpg" alt="Cristal Power Official Logo 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-light block">Logo Monogram</span>
+                            <span class="text-[9px] text-brand-pink mt-0.5 block"><i class="fa-solid fa-expand"></i> Ver en alta resolución</span>
+                        </div>
+
+                        <div class="glass-card p-3 rounded-xl border border-brand-light/15 hover:border-brand-pink transition-all group cursor-pointer text-center" onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264846/IMG-20260924-WA0012_cmtaml.jpg', 'Cristal Power — Logo Identity Stamp Asset')">
+                            <div class="aspect-square rounded-lg overflow-hidden bg-brand-black mb-3 border border-brand-light/10">
+                                <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264846/IMG-20260924-WA0012_cmtaml.jpg" alt="Cristal Power Official Logo 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-light block">Identity Stamp</span>
+                            <span class="text-[9px] text-brand-pink mt-0.5 block"><i class="fa-solid fa-expand"></i> Ver en alta resolución</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    
+                    <!-- Photo 1 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-brand-light/15 aspect-[3/4] relative group bg-brand-black cursor-pointer shadow-lg hover:border-brand-pink/60 transition-all duration-300"
+                         onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264361/IMG_6162_xjifuk.jpg', 'Cristal Power — Official Studio Portrait')">
+                        <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264361/IMG_6162_xjifuk.jpg" 
+                             alt="Cristal Power Studio Portrait" 
+                             class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-[10px] uppercase font-bold text-brand-pink tracking-widest">Press Photo #1</span>
+                            <p class="font-serif text-lg text-brand-light">Studio Portrait</p>
+                            <span class="text-[10px] text-brand-taupe mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-brand-pink"></i> Clic para ampliar</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-brand-light/15 aspect-[3/4] relative group bg-brand-black cursor-pointer shadow-lg hover:border-brand-pink/60 transition-all duration-300"
+                         onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264366/IMG_7448_2_rl7sq4.jpg', 'Cristal Power — Live Performance Set')">
+                        <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264366/IMG_7448_2_rl7sq4.jpg" 
+                             alt="Cristal Power Live Performance" 
+                             class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-[10px] uppercase font-bold text-brand-pink tracking-widest">Press Photo #2</span>
+                            <p class="font-serif text-lg text-brand-light">Live Performance</p>
+                            <span class="text-[10px] text-brand-taupe mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-brand-pink"></i> Clic para ampliar</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-brand-light/15 aspect-[3/4] relative group bg-brand-black cursor-pointer shadow-lg hover:border-brand-pink/60 transition-all duration-300"
+                         onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264365/IMG_7458_l27iqq.jpg', 'Cristal Power — DJ Booth & Stage Energy')">
+                        <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264365/IMG_7458_l27iqq.jpg" 
+                             alt="Cristal Power DJ Booth" 
+                             class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-[10px] uppercase font-bold text-brand-pink tracking-widest">Press Photo #3</span>
+                            <p class="font-serif text-lg text-brand-light">DJ Booth & Vibe</p>
+                            <span class="text-[10px] text-brand-taupe mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-brand-pink"></i> Clic para ampliar</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 4 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-brand-light/15 aspect-[3/4] relative group bg-brand-black cursor-pointer shadow-lg hover:border-brand-pink/60 transition-all duration-300"
+                         onclick="openImageModal('https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264366/IMG_7464_jqx1pq.jpg', 'Cristal Power — Stage Portrait & Club Vibe')">
+                        <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264366/IMG_7464_jqx1pq.jpg" 
+                             alt="Cristal Power Stage Portrait" 
+                             class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-[10px] uppercase font-bold text-brand-pink tracking-widest">Press Photo #4</span>
+                            <p class="font-serif text-lg text-brand-light">Club & Festival Vibe</p>
+                            <span class="text-[10px] text-brand-taupe mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-brand-pink"></i> Clic para ampliar</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Download Media Kit Button -->
+                <div class="text-center">
+                    <button onclick="downloadMediaPack()" class="px-8 py-4 rounded-xl bg-brand-pink text-white font-bold text-xs tracking-widest uppercase shadow-neon-pink hover:scale-105 transition-all inline-flex items-center gap-3">
+                        <i class="fa-solid fa-cloud-arrow-down text-lg"></i>
+                        <span>Descargar Full High-Res Press Assets (.ZIP / Drive)</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-light/15 bg-brand-black/95 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Direct Info Left Column -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/30 text-brand-pink text-xs font-bold uppercase tracking-widest mb-4">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Contacto Directo</span>
+                            </div>
+                            <h2 class="font-serif text-4xl sm:text-5xl font-normal uppercase text-brand-light tracking-tight">
+                                Management & Booking<span class="text-brand-pink font-bold">.</span>
+                            </h2>
+                            <p class="text-brand-taupe mt-3 text-sm">
+                                Para contrataciones internacionales, fechas de tour, prensa o solicitudes de remixes, ponte en contacto directo.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-brand-light/15">
+                                <div class="w-12 h-12 rounded-full bg-brand-pink/10 border border-brand-pink/30 flex items-center justify-center text-brand-pink shrink-0">
+                                    <i class="fa-solid fa-at text-xl"></i>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <p class="text-[10px] font-bold uppercase tracking-widest text-brand-taupe">Email Oficial</p>
+                                    <a href="mailto:CRISTALPOWERDJ@GMAIL.COM" class="font-mono text-brand-light hover:text-brand-pink font-bold text-sm sm:text-base transition-colors truncate block">
+                                        CRISTALPOWERDJ@GMAIL.COM
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-brand-light/15">
+                                <div class="w-12 h-12 rounded-full bg-brand-pink/10 border border-brand-pink/30 flex items-center justify-center text-brand-pink shrink-0">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold uppercase tracking-widest text-brand-taupe">Teléfono / WhatsApp</p>
+                                    <a href="tel:+17865906551" class="font-mono text-brand-light hover:text-brand-pink font-bold text-sm sm:text-base transition-colors">
+                                        +1 (786) 590-6551
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-brand-light/15">
+                                <div class="w-12 h-12 rounded-full bg-brand-pink/10 border border-brand-pink/30 flex items-center justify-center text-brand-pink shrink-0">
+                                    <i class="fa-brands fa-instagram text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold uppercase tracking-widest text-brand-taupe">Instagram Direct</p>
+                                    <a href="https://instagram.com/cristalpower_" target="_blank" rel="noopener noreferrer" class="font-mono text-brand-light hover:text-brand-pink font-bold text-sm sm:text-base transition-colors">
+                                        @cristalpower_
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Right Column -->
+                    <div class="lg:col-span-7">
+                        <div class="glass-card p-8 rounded-2xl border border-brand-light/15 bg-brand-black/95">
+                            <h3 class="font-serif text-3xl text-brand-light uppercase mb-6">
+                                Formulario de Solicitud<span class="text-brand-pink font-bold">.</span>
+                            </h3>
+
+                            <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-[10px] font-bold uppercase tracking-widest text-brand-light mb-2">Nombre Completo *</label>
+                                        <input type="text" required placeholder="Ej. Alex Rivera" class="w-full px-4 py-3 rounded-xl bg-brand-gray/30 border border-brand-light/15 text-brand-light placeholder-brand-taupe focus:outline-none focus:border-brand-pink transition-colors text-sm">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] font-bold uppercase tracking-widest text-brand-light mb-2">Email de Contacto *</label>
+                                        <input type="email" required placeholder="booker@club.com" class="w-full px-4 py-3 rounded-xl bg-brand-gray/30 border border-brand-light/15 text-brand-light placeholder-brand-taupe focus:outline-none focus:border-brand-pink transition-colors text-sm">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-[10px] font-bold uppercase tracking-widest text-brand-light mb-2">Nombre del Evento / Club *</label>
+                                        <input type="text" required placeholder="Ej. Factory Town / Sunset Festival" class="w-full px-4 py-3 rounded-xl bg-brand-gray/30 border border-brand-light/15 text-brand-light placeholder-brand-taupe focus:outline-none focus:border-brand-pink transition-colors text-sm">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] font-bold uppercase tracking-widest text-brand-light mb-2">Ciudad & País *</label>
+                                        <input type="text" required placeholder="Ej. Miami, FL - USA" class="w-full px-4 py-3 rounded-xl bg-brand-gray/30 border border-brand-light/15 text-brand-light placeholder-brand-taupe focus:outline-none focus:border-brand-pink transition-colors text-sm">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-[10px] font-bold uppercase tracking-widest text-brand-light mb-2">Fecha Propuesta *</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-xl bg-brand-gray/30 border border-brand-light/15 text-brand-light focus:outline-none focus:border-brand-pink transition-colors text-sm">
+                                </div>
+
+                                <div>
+                                    <label class="block text-[10px] font-bold uppercase tracking-widest text-brand-light mb-2">Mensaje / Detalles Adicionales</label>
+                                    <textarea rows="4" placeholder="Presupuesto estimado, tipo de set (Main, Peak Hour, Extended), horario, etc." class="w-full px-4 py-3 rounded-xl bg-brand-gray/30 border border-brand-light/15 text-brand-light placeholder-brand-taupe focus:outline-none focus:border-brand-pink transition-colors text-sm"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl bg-brand-pink text-white font-bold uppercase tracking-widest text-xs shadow-neon-pink hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Enviar Solicitud de Booking</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-brand-black border-t border-brand-light/15 py-12 px-4 sm:px-6 lg:px-8 text-center text-brand-taupe text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-left flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-black border border-brand-pink/50 flex items-center justify-center overflow-hidden shadow-neon-pink">
+                    <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1790264847/IMG-20260924-WA0014_uevmnu.jpg" alt="Cristal Power Logo" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <span class="font-serif text-lg text-brand-light tracking-wider block">CRISTAL POWER</span>
+                    <p class="text-[10px] text-brand-taupe mt-0.5">Official Electronic Press Kit © 2026. All Rights Reserved.</p>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex items-center space-x-6 text-xl">
+                <a href="https://instagram.com/cristalpower_" target="_blank" rel="noopener noreferrer" class="text-brand-taupe hover:text-brand-pink transition-colors" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer" class="text-brand-taupe hover:text-brand-pink transition-colors" title="SoundCloud">
+                    <i class="fa-brands fa-soundcloud"></i>
+                </a>
+                <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="text-brand-taupe hover:text-brand-pink transition-colors" title="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-brand-taupe hover:text-brand-pink transition-colors" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast-modal" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 max-w-md">
+        <div class="glass-card p-4 rounded-xl border border-brand-pink bg-brand-black shadow-neon-pink flex items-center gap-4 text-brand-light">
+            <div class="w-10 h-10 rounded-full bg-brand-pink/20 text-brand-pink flex items-center justify-center shrink-0">
+                <i id="toast-icon" class="fa-solid fa-check text-lg"></i>
+            </div>
+            <div>
+                <h5 id="toast-title" class="font-bold text-sm">¡Mensaje Enviado!</h5>
+                <p id="toast-msg" class="text-xs text-brand-taupe">Gracias por tu interés. Responderemos a la brevedad.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="image-modal" class="fixed inset-0 z-50 bg-brand-black/95 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300" onclick="closeImageModal()">
+        <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+            <button onclick="closeImageModal()" class="absolute -top-12 right-0 text-white hover:text-brand-pink text-2xl p-2 font-bold focus:outline-none transition-colors">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <img id="modal-img" src="" alt="Press Photo" class="max-h-[78vh] w-auto object-contain rounded-xl border border-brand-light/20 shadow-neon-pink">
+            <div class="mt-4 flex flex-col sm:flex-row items-center justify-between w-full text-xs text-brand-taupe px-2 gap-3">
+                <span id="modal-caption" class="font-serif text-lg text-brand-light text-center sm:text-left"></span>
+                <a id="modal-download" href="" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-brand-pink text-white font-bold uppercase tracking-widest hover:scale-105 transition-transform flex items-center gap-2 shadow-neon-pink">
+                    <i class="fa-solid fa-up-right-from-square"></i> Abrir Imagen Completa
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function toggleBio() {
+            const fullBio = document.getElementById('full-bio');
+            const btnText = document.getElementById('bio-btn-text');
+            const btnIcon = document.getElementById('bio-btn-icon');
+
+            if (fullBio.classList.contains('hidden')) {
+                fullBio.classList.remove('hidden');
+                btnText.textContent = "Mostrar menos";
+                btnIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+            } else {
+                fullBio.classList.add('hidden');
+                btnText.textContent = "Leer Biografía Oficial Completa";
+                btnIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+            }
+        }
+
+        function switchShowsTab(tabName) {
+            document.querySelectorAll('.show-content').forEach(el => el.classList.add('hidden'));
+            
+            document.querySelectorAll('.show-tab').forEach(el => {
+                el.classList.remove('bg-brand-pink', 'text-white', 'shadow-neon-pink');
+                el.classList.add('glass-card', 'text-brand-taupe');
+            });
+
+            const activeTab = document.getElementById(`tab-${tabName}`);
+            const activeContent = document.getElementById(`content-${tabName}`);
+
+            if (activeTab && activeContent) {
+                activeTab.classList.remove('glass-card', 'text-brand-taupe');
+                activeTab.classList.add('bg-brand-pink', 'text-white', 'shadow-neon-pink');
+                activeContent.classList.remove('hidden');
+            }
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            showToast('¡Solicitud Enviada!', 'El equipo de booking de Cristal Power responderá en <24h.');
+            e.target.reset();
+        }
+
+        function downloadPressKit() {
+            showToast('Descargando EPK...', 'Se ha iniciado la descarga del Press Kit en PDF.');
+        }
+
+        function downloadMediaPack() {
+            showToast('Abriendo Media Pack...', 'Redirigiendo a la carpeta en alta resolución.');
+        }
+
+        function openImageModal(src, caption) {
+            const modal = document.getElementById('image-modal');
+            const img = document.getElementById('modal-img');
+            const cap = document.getElementById('modal-caption');
+            const dl = document.getElementById('modal-download');
+            
+            img.src = src;
+            cap.textContent = caption;
+            dl.href = src;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeImageModal() {
+            const modal = document.getElementById('image-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function showToast(title, message) {
+            const toast = document.getElementById('toast-modal');
+            const toastTitle = document.getElementById('toast-title');
+            const toastMsg = document.getElementById('toast-msg');
+
+            toastTitle.textContent = title;
+            toastMsg.textContent = message;
+
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-32', 'opacity-0');
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
